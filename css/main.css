@@ -29,7 +29,13 @@ header {
   background-color: #333;
   color: #ffffff;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
+
 header h1 {
   display: inline;
   margin-right: 1rem;
@@ -56,9 +62,11 @@ nav ul li a:hover {
 
 main {
   padding: 2rem;
+  padding-top: 5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .banner {
   background-image: url("../images/aurora-corvette.png");
   background-size: cover;
