@@ -8,9 +8,16 @@
   </head>
   <body>
     <header>
-      <h1>Aurora Auto Works</h1>
+      <h1>
+        <a href="/">Aurora Autoworks</a>
+      </h1>
       <nav>
-        <ul>
+        <button class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/about.html">About Us</a></li>
@@ -18,47 +25,58 @@
         </ul>
       </nav>
     </header>
+
+    <!-- BANNER -->
     <div class="banner">
-      <h2>Expert Care for Your Luxury Vehicle</h2>
+      <h2>Welcome to Aurora Autoworks</h2>
     </div>
+
     <main>
+      <!-- ABOUT -->
       <section class="parallax-section">
         <div class="content-container">
           <h2>Why Choose Us?</h2>
           <p>
-            Aurora Auto Works has been serving the Canton, Michigan community
-            for over 20 years. Our certified mechanics specialize in luxury
-            vehicles, ensuring top-quality service and repairs for your prized
-            possession. We take pride in our state-of-the-art facilities,
-            top-notch customer service, and competitive pricing. Trust Aurora
-            Auto Works for all your luxury auto repair needs.
+            Aurora Auto Works specializes in the restoration of antique and
+            classic cars. With a passion for automotive history and a commitment
+            to excellence, our experienced team of craftsmen transforms vintage
+            vehicles into works of art. Our Westland, Michigan facility is fully
+            equipped to handle all aspects of antique car restoration, from
+            bodywork and paint to mechanical and electrical repairs.
           </p>
         </div>
       </section>
+
+      <!-- SERVICES -->
       <section class="services">
+        <h2>Our Services</h2>
         <div class="service">
-          <img src="images/aurora-cars-in-lobby.png" alt="Service 1" />
-          <h3>Engine Repair</h3>
+          <h3>Body and Paint Restoration</h3>
           <p>
-            Our certified mechanics perform comprehensive engine diagnostics and
-            repairs to keep your luxury vehicle running at peak performance.
+            Our skilled technicians use traditional and modern techniques to
+            restore antique car bodies to their former glory. We take great
+            pride in our ability to perfectly match original colors and
+            finishes, ensuring that your vehicle looks as good as it did when it
+            first rolled off the assembly line.
           </p>
         </div>
         <div class="service">
-          <img src="images/aurora-garage.png" alt="Service 2" />
-          <h3>Transmission Service</h3>
+          <h3>Mechanical Restoration</h3>
           <p>
-            From routine maintenance to complex transmission repairs, our
-            experienced team ensures your vehicle operates smoothly and
-            efficiently.
+            Our team of experienced mechanics is adept at rebuilding and tuning
+            vintage engines, transmissions, and suspension systems. We work with
+            precision and care to ensure that your classic car drives as
+            smoothly and reliably as possible.
           </p>
         </div>
         <div class="service">
-          <img src="images/aurora-firebird-lobby.png" alt="Service 3" />
-          <h3>Suspension & Steering</h3>
+          <h3>Electrical and Interior Restoration</h3>
           <p>
-            Ensure a comfortable ride and precise handling with our expert
-            suspension and steering services, tailored for luxury vehicles.
+            From rewiring electrical systems to reupholstering interiors, our
+            team is dedicated to restoring every aspect of your antique car with
+            the utmost attention to detail. We source high-quality materials and
+            components to ensure that your vehicle's interior and electrical
+            systems function flawlessly.
           </p>
         </div>
       </section>
@@ -70,5 +88,16 @@
         Phone: (555) 123-4567 | Email: info@auroraautoworks.com
       </p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburgerMenu = document.querySelector(".hamburger-menu");
+        var navLinks = document.querySelector(".nav-links");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("show");
+          hamburgerMenu.classList.toggle("open");
+        });
+      });
+    </script>
   </body>
 </html>
