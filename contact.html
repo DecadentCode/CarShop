@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Auto Works - Page Title</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">Aurora Autoworks</a>
+      </h1>
+      <nav>
+        <button class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner">
+      <h1>Contact Us</h1>
+    </div>
+
+    <main>
+      <!-- CONTENT -->
+      <section>
+        <div class="content-container">
+          <h2>CONTACT US</h2>
+          <p>Call us at 555-555-5555</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2023 Aurora Auto Works. All rights reserved. <br />
+        39025 Warren Rd, Westland, MI 48185 <br />
+        Phone: (555) 123-4567 | Email: info@auroraautoworks.com
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburgerMenu = document.querySelector(".hamburger-menu");
+        var navLinks = document.querySelector(".nav-links");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("show");
+          hamburgerMenu.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

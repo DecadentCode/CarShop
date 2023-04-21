@@ -3,24 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Car Repair Shop</title>
+    <title>Aurora Auto Works - Page Title</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
-      <h1>Luxury Car Repair Shop</h1>
+      <h1>
+        <a href="/">Aurora Autoworks</a>
+      </h1>
       <nav>
-        <ul>
+        <button class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+
+    <!-- BANNER -->
+    <div class="banner">
+      <h1>About Us</h1>
+    </div>
+
+    <main>
+      <!-- CONTENT -->
+      <section>
+        <div class="content-container">
+          <h2>About Us</h2>
+          <p>
+            At Aurora Autoworks, we are dedicated to breathing new life into
+            classic and antique automobiles. Our team of skilled craftsmen and
+            automotive enthusiasts combines decades of experience with a
+            deep-rooted passion for preserving automotive history. We pride
+            ourselves on delivering exceptional restorations, ensuring that
+            every car that leaves our Westland, Michigan facility is a testament
+            to the golden era of motoring. With unparalleled attention to detail
+            and a commitment to providing personalized customer service, Aurora
+            Autoworks is your premier destination for all your classic car
+            restoration needs. Rediscover the timeless elegance and thrill of
+            the open road with us.
+          </p>
+        </div>
+      </section>
+    </main>
     <footer>
-      <p>&copy; 2023 Luxury Car Repair Shop. All rights reserved.</p>
+      <p>
+        &copy; 2023 Aurora Auto Works. All rights reserved. <br />
+        39025 Warren Rd, Westland, MI 48185 <br />
+        Phone: (555) 123-4567 | Email: info@auroraautoworks.com
+      </p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburgerMenu = document.querySelector(".hamburger-menu");
+        var navLinks = document.querySelector(".nav-links");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("show");
+          hamburgerMenu.classList.toggle("open");
+        });
+      });
+    </script>
   </body>
 </html>
