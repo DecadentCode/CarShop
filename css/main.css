@@ -10,6 +10,9 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+body p {
+  font-size: larger;
+}
 
 body::before {
   content: "";
