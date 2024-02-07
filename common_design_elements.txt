@@ -1,0 +1,5 @@
+- Gallery of past and current restoration projects
+- Contact page with a form to send a message
+- Menu with tabs to navigate through different sections
+- Customer reviews
+- Three-step approach to restoration: design consultation, cost estimate, and quality assurance
